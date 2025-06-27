@@ -1,13 +1,11 @@
 package com.wantoper.GoF06_Adapter.Cars;
 
 public class Driver {
-    private Car car;
 
-    public Driver(Car car){
-        this.car = car;
+    public Driver(){
     }
 
-    public void goTo(String destination){
-        this.car.drive(destination);
+    public void goTo(vehicle vehicles,String destination){
+        vehicles.drive(destination);
     }
 }

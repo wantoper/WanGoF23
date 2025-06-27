@@ -8,10 +8,10 @@ public class GoF06_Main {
     public static void main(String[] args) {
         HauweiCar huaweiCar = new HauweiCar();
         XiaomiCar xiaomiCar = new XiaomiCar();
-        Driver xiaomidriver = new Driver(xiaomiCar);
-        Driver huaweidriver = new Driver(huaweiCar);
+        Driver driver = new Driver();
 
-        xiaomidriver.goTo("北京");
-        huaweidriver.goTo("上海");
+        driver.goTo(huaweiCar,"北京");
+        driver.goTo(xiaomiCar,"上海");
+
     }
 }
